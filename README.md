@@ -1,26 +1,19 @@
-= Ryan Bates Dot Files
+Daniel's Dot Files
+======================
 
 These are config files to set up a system the way I like it.
 
 
 == Installation
 
-  git clone git://github.com/ryanb/dotfiles ~/.dotfiles
+  git clone git://github.com/danielpcox/dotfiles ~/.dotfiles
   cd ~/.dotfiles
   rake install
 
+Nothing below here changed from Ryan Bates Dot Files
+====================================================
 
-== Environment
-
-I am running on Mac OS X, but it will likely work on Linux as well with 
-minor fiddling. I primarily use zsh, but this includes some older bash 
-files as well. If you would like to switch to zsh, you can do so with 
-the following command.
-
-  chsh -s /bin/zsh
-
-
-== Features
+## Features
 
 I normally place all of my coding projects in ~/code, so this directory 
 can easily be accessed (and tab completed) with the "c" command.
