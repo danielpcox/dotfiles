@@ -12,6 +12,8 @@ set foldmethod=manual
 set cursorline
 set ignorecase
 set smartcase
+set incsearch
+set hlsearch
 
 " nice font for my eyes
 set guifont=DejaVu\ Sans\ Mono\ Bold\ 9
