@@ -1,0 +1,17 @@
+snippet actions
+	<?php
+
+	class ${1:module}Actions extends sfActions
+	{
+	  public function execute${2:action}(sfWebRequest $request)
+	  {
+	    ${3:// your action}
+	  }
+	}
+snippet action
+	public function execute${1:action}(sfWebRequest $request)
+	{
+	  ${2:// your action}
+	}
+snippet rgp
+	$request->getParameter(${2:parameter});
