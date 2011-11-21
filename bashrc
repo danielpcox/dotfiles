@@ -102,7 +102,7 @@ fi
 
 # to make rvm (ruby versioner) work
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-rvm use 1.9.3
+#rvm use 1.9.3
 
 # :/home/daniel/.rvm/gems/ruby-1.9.1-p378/bin
 PATH=/home/danielpcox/bin:/opt/mipsel-linux/bin:$PATH
