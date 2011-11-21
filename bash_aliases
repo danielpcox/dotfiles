@@ -9,4 +9,5 @@ alias t='~/bin/todo.sh -d ~/Dropbox/todo/.todo.cfg'
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
-alias gvim='gvim -f'
+#alias gvim='gvim -f'
+function gvim () { /usr/bin/gvim -f $* & }
