@@ -121,18 +121,26 @@ let g:Tex_ViewRule_ps='evince'
 let g:Tex_ViewRule_pdf='xpdf'
 
 " specky commands
-let g:speckyBannerKey = "<C-S>b"
-let g:speckyQuoteSwitcherKey = "<C-S>'"
-let g:speckyRunRdocKey = "<C-S>r"
-let g:speckySpecSwitcherKey = "<C-S>x"
-let g:speckyRunSpecKey = "<C-S>s"
+"let g:speckyBannerKey = "<C-S>b"
+"let g:speckyQuoteSwitcherKey = "<C-S>'"
+"let g:speckyRunRdocKey = "<C-S>r"
+"let g:speckySpecSwitcherKey = "<C-S>x"
+"let g:speckyRunSpecKey = "<C-S>s"
 "let g:speckyBannerKey = "<Leader>b"
 "let g:speckyQuoteSwitcherKey = "<Leader>'"
 "let g:speckyRunRdocKey = "<Leader>r"
 "let g:speckySpecSwitcherKey = "<Leader>x"
 "let g:speckyRunSpecKey = "<Leader>s"
+"let g:speckyRunSpecCmd = "spec -fs -r loadpath.rb"
+"let g:speckyRunRdocCmd = "ri"
+"let g:speckyWindowType = 2
+let g:speckyBannerKey = "<C-S>b"
+let g:speckyQuoteSwitcherKey = "<C-S>'"
+let g:speckyRunRdocKey = "<C-S>r"
+let g:speckySpecSwitcherKey = "<C-S>x"
+let g:speckyRunSpecKey = "<C-S>s"
 let g:speckyRunSpecCmd = "spec -fs -r loadpath.rb"
-let g:speckyRunRdocCmd = "ri"
+let g:speckyRunRdocCmd = "fri -L -f plain"
 let g:speckyWindowType = 2
 
 " gist.vim commands
