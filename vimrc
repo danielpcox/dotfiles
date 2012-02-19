@@ -139,7 +139,7 @@ let g:speckyQuoteSwitcherKey = "<C-S>'"
 let g:speckyRunRdocKey = "<C-S>r"
 let g:speckySpecSwitcherKey = "<C-S>x"
 let g:speckyRunSpecKey = "<C-S>s"
-let g:speckyRunSpecCmd = "spec -fs -r loadpath.rb"
+let g:speckyRunSpecCmd = "rspec -c -fs -r spec_helper.rb"
 let g:speckyRunRdocCmd = "fri -L -f plain"
 let g:speckyWindowType = 2
 
@@ -148,5 +148,11 @@ let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_detect_filetype = 1
 "let g:gist_browser_command = 'chromium-browser --app=%URL%'
 let g:gist_open_browser_after_post = 1
+
+"GNU screen settings
+if match($TERM, "screen")!=-1
+  set term=xterm
+endif
+
 
 source ~/.vimrc_secrets
