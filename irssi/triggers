@@ -3,5 +3,5 @@
 -privmsgs -nocase -regexp '&gt;' -replace '>' 
 -privmsgs -nocase -regexp '&lt;' -replace '<' 
 -privmsgs -nocase -regexp '&quot;' -replace '"' 
--privmsgs -nocase -regexp '(<|&lt;)/?(b|body|div|em|font|i|s|u)( +\w+=".*?")*(>|&gt;)' -replace '' 
--privmsgs -nocase -regexp '(<|&lt;)/?(B|BODY|DIV|EM|FONT|I|S|U)( +\w+=".*?")*(>|&gt;)' -replace '' 
+-privmsgs -nocase -regexp '(<|&lt;)/?(body|div|font)( +\w+=".*?")*(>|&gt;)' -replace '' 
+-privmsgs -nocase -regexp '(<|&lt;)/?(BODY|DIV|FONT)( +\w+=".*?")*(>|&gt;)' -replace '' 
