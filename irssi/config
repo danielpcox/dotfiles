@@ -274,10 +274,6 @@ settings = {
   "fe-text" = { actlist_sort = "refnum"; };
 };
 keyboard = (
-  { key = "ctrl+j"; id = "command"; data = "nicklist scroll +10"; },
-  { key = "ctrl-j"; id = "command"; data = "nicklist scroll +10"; },
   { key = "meta-j"; id = "command"; data = "nicklist scroll +10"; },
-  { key = "meta2-j"; id = "command"; data = "nicklist scroll +10"; },
-  { key = "ctrl-k"; id = "command"; data = "nicklist scroll -10"; },
   { key = "meta-k"; id = "command"; data = "nicklist scroll -10"; }
 );
