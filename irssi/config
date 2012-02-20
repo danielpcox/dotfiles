@@ -209,6 +209,7 @@ statusbar = {
         act = { priority = "10"; };
         more = { priority = "-1"; alignment = "right"; };
         barend = { priority = "100"; alignment = "right"; };
+        typing_notice = { };
       };
     };
 
@@ -277,3 +278,4 @@ keyboard = (
   { key = "meta-j"; id = "command"; data = "nicklist scroll +10"; },
   { key = "meta-k"; id = "command"; data = "nicklist scroll -10"; }
 );
+logs = { };

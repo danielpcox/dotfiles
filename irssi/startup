@@ -1,0 +1,5 @@
+SCRIPT LOAD trigger.pl
+LOAD otr
+/connect localhost
+/NICKLIST screen
+/statusbar window add typing_notice
