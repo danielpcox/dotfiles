@@ -151,7 +151,7 @@ let g:gist_open_browser_after_post = 1
 
 "GNU screen settings
 if match($TERM, "screen")!=-1
-  set term=xterm
+  set term=xterm-256color
 endif
 
 
