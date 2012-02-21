@@ -273,6 +273,7 @@ settings = {
     nick = "danielpcox";
   };
   "fe-text" = { actlist_sort = "refnum"; };
+  "perl/core/scripts" = { spellcheck_enabled = "no"; };
 };
 keyboard = (
   { key = "meta-j"; id = "command"; data = "nicklist scroll +10"; },
