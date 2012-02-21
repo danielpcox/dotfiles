@@ -12,3 +12,4 @@ alias cp='cp -i'
 #alias gvim='gvim -f'
 function gvim () { /usr/bin/gvim -f $* & }
 alias spec="rspec -c"
+alias sharetmux="tmux -S /var/tmux/observable"
