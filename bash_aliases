@@ -13,4 +13,5 @@ alias cp='cp -i'
 #alias gvim='gvim -f'
 function gvim () { /usr/bin/gvim -f $* & }
 alias spec="rspec -c"
-alias sharetmux="tmux -S /var/tmux/observable new-session -d -s observable ; tmux -S /var/tmux/observable new-session -d -s staging ; tmux -S /var/tmux/observable attach-session -t observable"
+alias start_observable="tmux -S /var/tmux/observable new-session -d -s observable ; tmux -S /var/tmux/observable new-session -d -s staging ; tmux -S /var/tmux/observable attach-session -t observable"
+alias observable="tmux -S /var/tmux/observable"
