@@ -29,14 +29,16 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git bundler gem)
+plugins=(git github heroku bundler gem rvm extract ant)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
 # set the path
-export PATH=/home/danielpcox/bin:/opt/mipsel-linux/bin:/home/danielpcox/.rvm/gems/ruby-1.9.3-p0/bin:/home/danielpcox/.rvm/gems/ruby-1.9.3-p0@global/bin:/home/danielpcox/.rvm/rubies/ruby-1.9.3-p0/bin:/home/danielpcox/.rvm/bin:/home/danielpcox/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+export PATH=/home/danielpcox/.rvm/gems/ruby-1.9.3-p0/bin:/home/danielpcox/.rvm/gems/ruby-1.9.3-p0@global/bin:/home/danielpcox/.rvm/rubies/ruby-1.9.3-p0/bin:/home/danielpcox/.rvm/bin:/home/danielpcox/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
 # use my bash aliases
 source ~/.bash_aliases
+
+export GPGKEY=491C6EEC
