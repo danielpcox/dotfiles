@@ -14,8 +14,8 @@ alias gr='grep -r -n --exclude=*~ --color'
 # something to use for an alarm when things finish
 alias beeps='beep -r 200'
 
-# taskwarrior and todo.txt
-alias t='task'
+# taskwarrior and todo.txt aliases
+alias t='clear ; task'
 alias todo='~/bin/todo.sh -d ~/Dropbox/todo/.todo.cfg'
 
 # make these commands a bit safer
