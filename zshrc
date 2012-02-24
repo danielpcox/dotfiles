@@ -41,4 +41,7 @@ export PATH=/home/danielpcox/.rvm/gems/ruby-1.9.3-p0/bin:/home/danielpcox/.rvm/g
 # use my bash aliases
 source ~/.bash_aliases
 
+# setup rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
 export GPGKEY=491C6EEC
