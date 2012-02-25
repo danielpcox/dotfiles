@@ -61,7 +61,8 @@ sub message_private_notify {
     my ($server, $msg, $nick, $address) = @_;
 
     return if (!$server);
-    $msg =~ s/[^A-Za-z ,.']//g;
+    $msg =~ s/[^A-Za-z0-9 ,."():;]//g;
+    $msg =~ s/^05//g;
     notify($server, "Private message from ".$nick, $msg);
 }
 
