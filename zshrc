@@ -44,4 +44,9 @@ source ~/.bash_aliases
 # setup rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# check the spelling of a word
+function spell() {
+  echo $1 | aspell -a
+}
+
 export GPGKEY=491C6EEC
