@@ -9,7 +9,7 @@ alias lh='ls --color=always -lasth | less -R'
 alias be='bundle exec'
 
 # colorful recursive grep with line numbers, excluding vim swaps
-alias gr='grep -r -n --exclude=*~ --color'
+alias gr='grep -r -n --exclude="*~" --color'
 
 # something to use for an alarm when things finish
 alias beeps='beep -r 200'
