@@ -1,6 +1,7 @@
 [user]
 	name = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
 	email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
+
 [alias]
 	co = checkout
 [color]
@@ -11,6 +12,9 @@
 	excludesfile = <%= ENV['HOME'] %>/.gitignore
 	editor = mate -w
 	autocrlf = input
+[branch "master"]
+        remote = origin
+        merge = refs/heads/master
 [apply]
 	whitespace = nowarn
 [format]
