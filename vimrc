@@ -154,5 +154,11 @@ if match($TERM, "screen")!=-1
   set term=xterm-256color
 endif
 
+" java syntax highlighting all on
+let java_highlight_all=1
 
-source ~/.vimrc_secrets
+let Tlist_Ctags_Cmd = "/usr/bin/ctags"
+let Tlist_WinWidth = 50
+map <F4> :TlistToggle<cr>
+
+"source ~/.vimrc_secrets

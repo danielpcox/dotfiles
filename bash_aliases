@@ -9,7 +9,7 @@ alias lh='ls --color=always -lasth | less -R'
 alias be='bundle exec'
 
 # colorful recursive grep with line numbers, excluding vim swaps
-alias gr='grep -r -n --exclude="*~" --color'
+alias gr='grep -r -n -H --exclude="*~" --color'
 
 # something to use for an alarm when things finish
 alias beeps='beep -r 200'
@@ -32,3 +32,6 @@ alias rspec="rspec -c"
 # shared tmux session
 alias start_observable="tmux -S /var/tmux/observable new-session -d -s observable ; tmux -S /var/tmux/observable new-session -d -s staging ; tmux -S /var/tmux/observable attach-session -t observable"
 alias observable="tmux -S /var/tmux/observable"
+
+# alias vim to use macvim
+alias vim="mvim -v"

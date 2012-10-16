@@ -36,10 +36,12 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # set the path
-export PATH=/home/danielpcox/.rvm/gems/ruby-1.9.3-p0/bin:/home/danielpcox/.rvm/gems/ruby-1.9.3-p0@global/bin:/home/danielpcox/.rvm/rubies/ruby-1.9.3-p0/bin:/home/danielpcox/.rvm/bin:/home/danielpcox/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+export PATH=/Library/jruby-1.7/bin:/usr/local/sbin:/usr/local/bin:/home/danielpcox/.rvm/gems/ruby-1.9.3-p0/bin:/home/danielpcox/.rvm/gems/ruby-1.9.3-p0@global/bin:/home/danielpcox/.rvm/rubies/ruby-1.9.3-p0/bin:/home/danielpcox/.rvm/bin:/home/danielpcox/bin:/usr/lib/lightdm/lightdm:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/mysql/bin:/Users/daniel.cox/bin
 
 # use my bash aliases
 source ~/.bash_aliases
+# use my bash profile
+source ~/.bash_profile
 
 # setup rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
@@ -49,4 +51,19 @@ function spell() {
   echo $1 | aspell -a
 }
 
+function blast() {
+  cat $1/*.pid | xargs kill -9
+}
+
+export JRUBY_OPTS=--1.9
+export JRUBY_HOME=/Users/daniel.cox/.rvm/rubies/jruby-1.6.7
+
 export GPGKEY=491C6EEC
+
+export EDITOR='mvim -v'
+
+# vi-mode CLI editing
+set -o emacs
+
+# enable RVM
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
