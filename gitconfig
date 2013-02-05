@@ -1,0 +1,19 @@
+[user]
+	name = Daniel Cox
+	email = daniel.cox@six3systems.com
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[core]
+	editor = mvim -v
+	excludesfile = /Users/daniel.cox/.gitignore
+	mergeoptions = --no-ff
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[alias]
+	l0g = log --stat=100,200 --decorate
+[push]
+	default = simple

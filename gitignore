@@ -1,4 +1,12 @@
 .DS_Store
-.svn
+*.svn
 *~
 .*.swp
+.powenv
+.classpath
+.project
+.settings
+target
+*.class
+pom.properties
+*.gem
