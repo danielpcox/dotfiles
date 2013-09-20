@@ -15,5 +15,10 @@
 	merge = refs/heads/master
 [alias]
 	l0g = log --stat=100,200 --decorate
+	g = grep --break --heading --line-number
+	co = checkout
 [push]
 	default = simple
+[grep]
+	extendRegexp = true
+	lineNumber = true

@@ -10,3 +10,14 @@ target
 *.class
 pom.properties
 *.gem
+vendor/bundle
+vendor/cache
+.bundle
+\#*\#
+*.iml
+*.ipr
+*.iws
+.gradle/
+build/
+test-output/
+.idea/
