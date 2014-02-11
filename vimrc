@@ -85,7 +85,7 @@ let g:miniBufExplModSelTarget = 1
 "setting the default size of the gvim window
 ":set lines=76
 ":set columns=100
-set lines=27
+set lines=50
 set columns=100
 
 " enable eclipse style moving of lines
