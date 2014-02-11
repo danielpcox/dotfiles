@@ -1,0 +1,38 @@
+# ~/.tmuxinator/wits-kafka-consumer.yml
+# you can make as many tabs as you wish...
+
+name: Default
+root: ~/
+
+windows:
+  - dash:
+      layout: main-horizontal
+      panes:
+        - TERM=screen-256color; htop
+        - irssi
+        - #empty
+  - scratch:
+      layout: tiled
+      panes:
+        - #empty
+        - #empty
+        - #empty
+        - #empty
+        - #empty
+  - three:
+      layout: tiled
+      panes:
+        - echo "hi there"
+        - echo "lo there"
+        - #empty
+        - #empty
+  - four:
+      layout: main-horizontal
+      panes:
+        - #empty
+        - #empty
+  - five:
+      layout: main-vertical
+      panes:
+        - 
+        - #empty
