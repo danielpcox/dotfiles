@@ -1,19 +1,27 @@
+" pathogen
+call pathogen#infect()
+
 set nocompatible
 "colorscheme desert
-colorscheme ir_black
+set background=dark
+colorscheme solarized
 set nowrap
 set number
 set tabstop=2
 set shiftwidth=2
 set expandtab
 set autoindent
-syn on
+syntax on
+set autochdir
 set foldmethod=manual
 set cursorline
 set ignorecase
 set smartcase
 set incsearch
 set hlsearch
+set spelllang=en_us
+set gcr=n:blinkon0
+set modeline
 
 " nice font for my eyes
 set guifont=DejaVu\ Sans\ Mono\ Bold\ 9
@@ -24,7 +32,7 @@ nmap tn :tabnext<CR>
 
 " omnicomplete improvements
 "--------------------------------------------------
-filetype plugin on
+filetype indent plugin on
 set nocp
 " set ofu=syntaxcomplete#Complete
 " highlight Pmenu guibg=brown gui=bold
@@ -49,7 +57,8 @@ set nocp
 map <C-F12> :!ctags -R .<CR>
 
 "limit to 80 cols
-"set textwidth=80
+set textwidth=100
+set colorcolumn=100
 
 "hiding toolbars:
 set guioptions-=T
@@ -59,8 +68,8 @@ nmap <C-F11> :if &guioptions=~'m' \| set guioptions-=m \| else \| set guioptions
 nmap <C-F7> :if &guioptions=~'r' \| set guioptions-=r \| else \| set guioptions+=r \| endif<CR>
 
 "xterm compatibility stuff
-source $VIMRUNTIME/vimrc_example.vim
-behave xterm
+"source $VIMRUNTIME/vimrc_example.vim
+"behave xterm
 
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
@@ -153,6 +162,7 @@ let g:gist_open_browser_after_post = 1
 if match($TERM, "screen")!=-1
   set term=xterm-256color
 endif
+set term=xterm-256color
 
 " java syntax highlighting all on
 let java_highlight_all=1
@@ -162,3 +172,16 @@ let Tlist_WinWidth = 50
 map <F4> :TlistToggle<cr>
 
 "source ~/.vimrc_secrets
+
+" Command-t settings
+set wildignore+=*~,.*,target,output,out
+
+" cursor can move one farther than the end of the line
+set virtualedit=onemore
+
+" Java settings
+
+autocmd BufRead *.java set include=^#\s*import 
+autocmd BufRead *.java set includeexpr='substitute(v:fname,"\\.","/","g").".java"'
+map gf <C-W>f
+map gc gdb<C-W>f
