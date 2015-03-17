@@ -3,10 +3,14 @@ call pathogen#infect()
 
 set nocompatible
 "colorscheme desert
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
+colorscheme shine
+highlight LineNr guifg=#050505
 set nowrap
 set number
+set rnu
+set incsearch
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -24,7 +28,8 @@ set gcr=n:blinkon0
 set modeline
 
 " nice font for my eyes
-set guifont=DejaVu\ Sans\ Mono\ Bold\ 9
+"set guifont=DejaVu\ Sans\ Mono\ Bold\ 9
+set guifont=Fira\ Mono:h12
 
 " use tp and tn for :tabprev and :tabnext
 nmap tp :tabprev<CR>
@@ -32,7 +37,6 @@ nmap tn :tabnext<CR>
 
 " omnicomplete improvements
 "--------------------------------------------------
-filetype indent plugin on
 set nocp
 " set ofu=syntaxcomplete#Complete
 " highlight Pmenu guibg=brown gui=bold
@@ -76,8 +80,12 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
+" vim-slime
+let g:slime_target = "tmux"
+
 "run NERDTree
 "autocmd VimEnter * exe 'NERDTree' | wincmd l
+let g:NERDTreeWinPos = "right"
 
 "surround with erb tags
 :vmap s5 "zdi<%=h <C-R>z %><Esc>
@@ -85,7 +93,7 @@ let g:miniBufExplModSelTarget = 1
 "setting the default size of the gvim window
 ":set lines=76
 ":set columns=100
-set lines=27
+set lines=28
 set columns=100
 
 " enable eclipse style moving of lines

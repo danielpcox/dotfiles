@@ -21,3 +21,5 @@ vendor/cache
 build/
 test-output/
 .idea/
+__pycache__
+.swp
