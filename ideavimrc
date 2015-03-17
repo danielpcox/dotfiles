@@ -1,0 +1,3 @@
+set rnu
+nmap ( ?(\\<bar>[\\<bar>{<CR>
+nmap ) /(\\<bar>[\\<bar>{<CR>
