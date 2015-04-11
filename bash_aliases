@@ -32,3 +32,5 @@ alias rspec="rspec -c"
 # shared tmux session
 alias start_observable="tmux -S /var/tmux/observable new-session -d -s observable ; tmux -S /var/tmux/observable new-session -d -s staging ; tmux -S /var/tmux/observable attach-session -t observable"
 alias observable="tmux -S /var/tmux/observable"
+
+function anybar { echo -n $1 | nc -4u -w0 localhost ${2:-1738}; }
