@@ -8,7 +8,7 @@
 	status = auto
 [core]
 	editor = mvim -v
-	excludesfile = /Users/daniel.cox/.gitignore
+	excludesfile = ~/.gitignore
 	mergeoptions = --no-ff
 [branch "master"]
 	remote = origin
