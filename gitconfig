@@ -8,15 +8,23 @@
 	status = auto
 [core]
 	editor = mvim -v
-	excludesfile = /Users/daniel.cox/.gitignore
-	mergeoptions = --no-ff
+	excludesfile = ~/.gitignore
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
 [alias]
 	l0g = log --stat=100,200 --decorate
 	g = grep --break --heading --line-number
+        s = status
+        f = fetch --all
+        b = branch
+        a = add --all
+        c = commit -m
+        d = diff
 	co = checkout
+	sdiff = !git diff && git submodule foreach 'git diff'
+	spush = push --recurse-submodules=on-demand
+	supdate = submodule update --remote --merge
 [push]
 	default = simple
 [grep]
@@ -24,3 +32,17 @@
 	lineNumber = true
 [remote "origin"]
 	push = HEAD
+
+[merge]
+  tool = ediff
+
+[mergetool "ediff"]
+  cmd = emacsclient -c -a \"\"  --eval \"(ediff-merge-files-with-ancestor \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$BASE\\\" nil \\\"$MERGED\\\")\"
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[diff]
+	submodule = log
+[status]
+	submodulesummary = 1

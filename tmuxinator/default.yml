@@ -8,8 +8,8 @@ windows:
   - dash:
       layout: main-horizontal
       panes:
-        - TERM=screen-256color; htop
-        - irssi
+        - sudo htop
+        - #empty
         - #empty
   - scratch:
       layout: tiled

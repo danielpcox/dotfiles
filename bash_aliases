@@ -1,6 +1,6 @@
 # for loading files in an open gvim from the console
-alias g='gvim --remote-silent'
-alias gt='gvim --remote-tab-silent'
+#alias g='gvim --remote-silent'
+#alias gt='gvim --remote-tab-silent'
 
 # colorful, scrollable ls with verbose options
 alias lh='ls --color=always -lasth | less -R'
@@ -26,6 +26,13 @@ alias cp='cp -i'
 # gvim detaches from the terminal
 function gvim () { /usr/bin/gvim -f $* & }
 
+#alias e='emacsclient -t'
+#alias ec='emacsclient -c'
+#alias vim='emacsclient -t'
+#alias vi='emacsclient -t'
+
+alias vim='atom'
+
 # colorize rspec
 alias rspec="rspec -c"
 
@@ -34,3 +41,19 @@ alias start_observable="tmux -S /var/tmux/observable new-session -d -s observabl
 alias observable="tmux -S /var/tmux/observable"
 
 function anybar { echo -n $1 | nc -4u -w0 localhost ${2:-1738}; }
+
+# git
+alias g='git'
+alias gitroot='cd $(git rev-parse --show-toplevel)'
+
+# maven
+alias mcpst="mvn clean package -DskipTests --offline"
+alias mpst="mvn package -DskipTests --offline"
+alias mcist="mvn clean install -DskipTests --offline"
+
+# atom
+alias a="reattach-to-user-namespace atom"
+alias atom="reattach-to-user-namespace atom"
+
+# docker
+alias d="docker"
