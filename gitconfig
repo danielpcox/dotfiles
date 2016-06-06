@@ -46,3 +46,5 @@
 	submodule = log
 [status]
 	submodulesummary = 1
+[branch]
+	autosetuprebase = always
