@@ -57,3 +57,8 @@ alias atom="reattach-to-user-namespace atom"
 
 # docker
 alias d="docker"
+alias dc="docker-compose"
+alias drmall="docker rm -f --volumes \$(docker ps -qa)"
+alias drmiuntagged="docker rmi \$(docker images | grep '^<none>' | awk '{ print $3 }')"
+alias drmvolumes="docker volume rm \$(docker volume ls | awk '{ print $2 }')"
+alias dcup='docker-compose up -d && docker-compose logs -f'
