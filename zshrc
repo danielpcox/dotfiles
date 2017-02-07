@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/danielpcox/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -48,7 +48,7 @@ DISABLE_AUTO_TITLE="true"
 plugins=(git)
 
 # User configuration
-export PATH="/usr/local/bin:/Users/danielpcox/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin"
+export PATH="$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:/usr/local/bin"
 export MAVEN_OPTS="-Djavax.net.ssl.trustStore=/Library/Java/cacerts -Djavax.net.ssl.trustStorePassword=changeit -Xmx512m -XX:MaxPermSize=128m -XX:+TieredCompilation -XX:TieredStopAtLevel=1"
 # for mactex
 eval `/usr/libexec/path_helper -s`
@@ -57,7 +57,7 @@ eval `/usr/libexec/path_helper -s`
 #eval $(docker-machine env default)
 #export DOCKER_TLS_VERIFY="1"
 #export DOCKER_HOST="tcp://192.168.99.100:2376"
-#export DOCKER_CERT_PATH="/Users/danielpcox/.docker/machine/machines/default"
+#export DOCKER_CERT_PATH="$HOME/.docker/machine/machines/default"
 #export DOCKER_MACHINE_NAME="default"
 
 source $ZSH/oh-my-zsh.sh
@@ -78,7 +78,12 @@ export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 export DGO=$GOPATH/src/github.com/deciphernow
 
-#source /Users/danielpcox/.nix-profile/etc/profile.d/nix.sh
+
+#NVM
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
+#source $HOME/.nix-profile/etc/profile.d/nix.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -105,4 +110,11 @@ export DGO=$GOPATH/src/github.com/deciphernow
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# TensorFlow
+export CUDA_HOME=/usr/local/cuda
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
+export PATH="$CUDA_HOME/bin:$PATH"
+
 source ~/.bash_aliases
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

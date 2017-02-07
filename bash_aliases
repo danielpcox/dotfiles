@@ -31,8 +31,6 @@ function gvim () { /usr/bin/gvim -f $* & }
 #alias vim='emacsclient -t'
 #alias vi='emacsclient -t'
 
-alias vim='atom'
-
 # colorize rspec
 alias rspec="rspec -c"
 
