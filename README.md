@@ -4,14 +4,18 @@ Daniel's Dot Files
 These are config files to set up a system the way I like it.
 
 
-== Installation
+Installation
+------------
+
 
 ```
   git clone git://github.com/danielpcox/dotfiles ~/.dotfiles
   ~/.dotfiles/setup.sh
 ```
 
-== License
+License
+-------
+
 
 ```
   The MIT License (MIT)
