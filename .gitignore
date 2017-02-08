@@ -5,4 +5,4 @@ vim/.VimballRecord
 irssi/otr
 irssi/config.autosave
 .netrwhist
-vim/
+vim/plugged/*
