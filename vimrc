@@ -15,9 +15,10 @@ Plug 'scrooloose/syntastic'
 Plug 'mxw/vim-jsx'
 Plug 'Quramy/vim-js-pretty-template'
 Plug 'alvan/vim-closetag'
+Plug 'neoclide/vim-jsx-improve'
+
 " Git
 Plug 'djoshea/vim-autoread'
-Plug 'neoclide/vim-jsx-improve'
 
 " Navigation
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
