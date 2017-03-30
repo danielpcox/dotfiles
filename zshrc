@@ -76,7 +76,7 @@ export GPG_TTY=$(tty)
 
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
-export DGO=$GOPATH/src/github.com/deciphernow
+export DGO=$GOPATH/src/github.com/deciphernow/
 
 
 #NVM

@@ -4,7 +4,7 @@
 
 call plug#begin('~/.vim/plugged')
 
-" JavaScript plugins
+" JavaScript
 Plug 'elzr/vim-json'
 Plug 'othree/jsdoc-syntax.vim'
 Plug 'heavenshell/vim-jsdoc'
@@ -25,7 +25,9 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ctrlpvim/ctrlp.vim'
 
 " Clojure
+Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+Plug 'tpope/vim-classpath', { 'for': 'clojure' }
 
 " Go
 Plug 'fatih/vim-go'
@@ -74,7 +76,7 @@ set shiftwidth=2
 set expandtab
 set autoindent
 set autochdir
-set foldmethod=manual
+set foldmethod=syntax
 set cursorline
 set ignorecase
 set smartcase
