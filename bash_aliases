@@ -42,6 +42,7 @@ function anybar { echo -n $1 | nc -4u -w0 localhost ${2:-1738}; }
 
 # git
 alias g='git'
+unalias gl
 alias gitroot='cd $(git rev-parse --show-toplevel)'
 
 # maven

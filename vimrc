@@ -18,6 +18,8 @@ Plug 'alvan/vim-closetag'
 Plug 'neoclide/vim-jsx-improve'
 
 " Git
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 Plug 'djoshea/vim-autoread'
 
 " Navigation
@@ -62,7 +64,9 @@ nnoremap <C-n> :call ToggleNERDTreeFind()<CR>
 "
 " GENERAL
 "
+let mapleader=","
 filetype plugin indent on
+colorscheme desert
 syntax enable
 highlight LineNr guifg=#050505
 set nowrap
@@ -76,7 +80,7 @@ set shiftwidth=2
 set expandtab
 set autoindent
 set autochdir
-set foldmethod=syntax
+set foldmethod=indent
 set cursorline
 set ignorecase
 set smartcase
