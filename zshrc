@@ -114,6 +114,7 @@ export NVM_DIR="$HOME/.nvm"
 export CUDA_HOME=/usr/local/cuda
 export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
 export PATH="$CUDA_HOME/bin:$PATH"
+export TESSDATA_PREFIX="$HOME/heap/tessdata"
 
 source ~/.bash_aliases
 
