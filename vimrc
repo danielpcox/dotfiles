@@ -19,6 +19,8 @@ Plug 'neoclide/vim-jsx-improve'
 
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'djoshea/vim-autoread'
 
@@ -45,6 +47,7 @@ call plug#end()
 "
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:ctrlp_working_path_mode = 'ra'
+let g:fugitive_gitlab_domains = ['https://gitlab.363-283.io']
 
 "NERDTree config
 function! ToggleNERDTreeFind()
