@@ -16,6 +16,7 @@ Plug 'mxw/vim-jsx'
 Plug 'Quramy/vim-js-pretty-template'
 Plug 'alvan/vim-closetag'
 Plug 'neoclide/vim-jsx-improve'
+Plug 'pangloss/vim-javascript'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -27,6 +28,8 @@ Plug 'djoshea/vim-autoread'
 " Navigation
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'sbdchd/indentline.vim'
 
 " Clojure
 Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
@@ -36,6 +39,7 @@ Plug 'tpope/vim-classpath', { 'for': 'clojure' }
 " Go
 Plug 'fatih/vim-go'
 Plug 'nsf/gocode'
+Plug 'uarun/vim-protobuf'
 
 call plug#end()
 
@@ -69,9 +73,12 @@ nnoremap <C-n> :call ToggleNERDTreeFind()<CR>
 "
 let mapleader=","
 filetype plugin indent on
-colorscheme desert
+runtime macros/matchit.vim
+colorscheme evening
 syntax enable
+autocmd BufEnter * :syntax sync fromstart
 highlight LineNr guifg=#050505
+set mouse=nicr
 set nowrap
 set number
 set ruler
@@ -83,7 +90,7 @@ set shiftwidth=2
 set expandtab
 set autoindent
 set autochdir
-set foldmethod=indent
+set foldmethod=manual
 set cursorline
 set ignorecase
 set smartcase
@@ -98,4 +105,4 @@ nmap tn :tabnext<CR>
 set guioptions-=T
 set guioptions-=m
 set guioptions-=r
-
+set diffopt+=iwhite
