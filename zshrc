@@ -48,7 +48,7 @@ DISABLE_AUTO_TITLE="true"
 plugins=(git)
 
 # User configuration
-export PATH="$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:/usr/local/bin"
+export PATH="$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:/usr/local/bin:~/.local/bin"
 export MAVEN_OPTS="-Djavax.net.ssl.trustStore=/Library/Java/cacerts -Djavax.net.ssl.trustStorePassword=changeit -Xmx512m -XX:MaxPermSize=128m -XX:+TieredCompilation -XX:TieredStopAtLevel=1"
 # for mactex
 eval `/usr/libexec/path_helper -s`
@@ -109,6 +109,9 @@ export NVM_DIR="$HOME/.nvm"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Anaconda
+export PATH=/usr/local/anaconda3/bin:"$PATH"
 
 # TensorFlow
 export CUDA_HOME=/usr/local/cuda
