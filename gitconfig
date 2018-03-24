@@ -21,6 +21,7 @@
   a = add --all
   c = commit -m
   d = diff
+  r = rebase
   co = checkout
   sdiff = !git diff && git submodule foreach 'git diff'
   spush = push --recurse-submodules=on-demand
@@ -35,10 +36,8 @@
   push = HEAD
 
 [merge]
-  tool = ediff
+	tool = vimdiff
 
-[mergetool "ediff"]
-  cmd = emacsclient -c -a \"\"  --eval \"(ediff-merge-files-with-ancestor \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$BASE\\\" nil \\\"$MERGED\\\")\"
 [filter "lfs"]
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f

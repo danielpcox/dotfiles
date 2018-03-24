@@ -121,4 +121,7 @@ export TESSDATA_PREFIX="$HOME/heap/tessdata"
 
 source ~/.bash_aliases
 
+
+RPROMPT="%D{%Y-%m-%d %H:%M:%S}"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
