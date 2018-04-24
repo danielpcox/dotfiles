@@ -110,9 +110,6 @@ export NVM_DIR="$HOME/.nvm"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Anaconda
-export PATH=/usr/local/anaconda3/bin:"$PATH"
-
 # TensorFlow
 export CUDA_HOME=/usr/local/cuda
 export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
