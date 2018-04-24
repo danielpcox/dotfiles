@@ -17,6 +17,7 @@ Plug 'Quramy/vim-js-pretty-template'
 Plug 'alvan/vim-closetag'
 Plug 'neoclide/vim-jsx-improve'
 Plug 'pangloss/vim-javascript'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -40,6 +41,11 @@ Plug 'tpope/vim-classpath', { 'for': 'clojure' }
 Plug 'fatih/vim-go'
 Plug 'nsf/gocode'
 Plug 'uarun/vim-protobuf'
+
+" Miscellaneous
+Plug 'chrisbra/NrrwRgn' " Edit a part of your file at a time with :NR
+Plug 'wesQ3/vim-windowswap' " Swap window panes with ,ww
+
 
 call plug#end()
 
@@ -67,6 +73,9 @@ function! ToggleNERDTreeFind()
 endfunction
 
 nnoremap <C-n> :call ToggleNERDTreeFind()<CR>
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1
 
 "
 " GENERAL
