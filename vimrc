@@ -11,7 +11,7 @@ Plug 'heavenshell/vim-jsdoc'
 Plug 'itspriddle/vim-jquery'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'moll/vim-node'
-Plug 'scrooloose/syntastic'
+"Plug 'scrooloose/syntastic'
 Plug 'mxw/vim-jsx'
 Plug 'Quramy/vim-js-pretty-template'
 Plug 'alvan/vim-closetag'
@@ -43,6 +43,7 @@ Plug 'nsf/gocode'
 Plug 'uarun/vim-protobuf'
 
 " Miscellaneous
+Plug 'lifepillar/vim-solarized8' " solarized colorscheme
 Plug 'chrisbra/NrrwRgn' " Edit a part of your file at a time with :NR
 Plug 'wesQ3/vim-windowswap' " Swap window panes with ,ww
 
@@ -83,7 +84,6 @@ let g:deoplete#enable_at_startup = 1
 let mapleader=","
 filetype plugin indent on
 runtime macros/matchit.vim
-colorscheme evening
 syntax enable
 autocmd BufEnter * :syntax sync fromstart
 highlight LineNr guifg=#050505
@@ -115,3 +115,11 @@ set guioptions-=T
 set guioptions-=m
 set guioptions-=r
 set diffopt+=iwhite
+set clipboard=unnamedplus
+
+" Color scheme
+
+set background=dark
+colorscheme solarized8
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
