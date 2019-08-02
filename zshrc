@@ -126,6 +126,7 @@ source /usr/local/anaconda3/etc/profile.d/conda.sh
 source ~/.bash_aliases
 
 
+PROMPT="%{$fg[green]%}%m%{$reset_color%} ${PROMPT}"
 RPROMPT="%D{%Y-%m-%d %H:%M:%S}"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
