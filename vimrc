@@ -46,6 +46,7 @@ Plug 'uarun/vim-protobuf'
 Plug 'lifepillar/vim-solarized8' " solarized colorscheme
 Plug 'chrisbra/NrrwRgn' " Edit a part of your file at a time with :NR
 Plug 'wesQ3/vim-windowswap' " Swap window panes with ,ww
+Plug 'agude/vim-eldar' " High-contrast color scheme
 
 
 call plug#end()
@@ -120,6 +121,6 @@ set clipboard=unnamedplus
 " Color scheme
 
 set background=dark
-colorscheme solarized8
+colorscheme eldar
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"

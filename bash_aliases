@@ -42,7 +42,7 @@ function anybar { echo -n $1 | nc -4u -w0 localhost ${2:-1738}; }
 
 # git
 alias g='git'
-unalias gl
+#unalias gl
 alias gitroot='cd $(git rev-parse --show-toplevel)'
 
 # maven
@@ -64,3 +64,9 @@ alias dcup='docker-compose up -d && docker-compose logs -f'
 
 # neovim
 alias vim=nvim
+
+# pipenv
+alias pe=pipenv
+
+
+alias ahab='docker ps -a | grep -v CONTAINER | awk '\''{print $1}'\'' | xargs docker stop | xargs docker rm; docker volume ls -qf dangling=true | xargs docker volume rm'

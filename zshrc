@@ -118,6 +118,10 @@ export TESSDATA_PREFIX="$HOME/heap/tessdata"
 
 # Anaconda
 export PATH=/usr/local/anaconda3/bin:"$PATH"
+source /usr/local/anaconda3/etc/profile.d/conda.sh
+
+# Minishift
+#eval $(minishift oc-env)
 
 source ~/.bash_aliases
 
