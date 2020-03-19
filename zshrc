@@ -130,3 +130,6 @@ PROMPT="%{$fg[green]%}%m%{$reset_color%} ${PROMPT}"
 RPROMPT="%D{%Y-%m-%d %H:%M:%S}"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+. /opt/anaconda3/etc/profile.d/conda.sh
+conda activate

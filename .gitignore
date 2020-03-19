@@ -6,3 +6,4 @@ irssi/otr
 irssi/config.autosave
 .netrwhist
 vim/plugged/*
+.DS_Store
