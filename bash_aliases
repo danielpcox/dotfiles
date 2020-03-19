@@ -70,3 +70,17 @@ alias pe=pipenv
 
 
 alias ahab='docker ps -a | grep -v CONTAINER | awk '\''{print $1}'\'' | xargs docker stop | xargs docker rm; docker volume ls -qf dangling=true | xargs docker volume rm'
+
+# ansible
+ap='ansible-playbook'
+
+# bc with math libraries and quiet loading
+alias bc="bc -lq"
+
+# grey matter
+alias kc='kubectl'
+alias mk='minikube'
+alias gm='greymatter'
+
+# search manpage for an option, like manopt grep -p
+function manopt() { man $1 | less -p "^ +$2"; }
