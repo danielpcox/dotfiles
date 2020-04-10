@@ -45,13 +45,13 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git pipenv)
 
 # User configuration
 export PATH="/usr/local/anaconda3/bin:$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:/usr/local/bin:~/.local/bin"
 export MAVEN_OPTS="-Djavax.net.ssl.trustStore=/Library/Java/cacerts -Djavax.net.ssl.trustStorePassword=changeit -Xmx512m -XX:MaxPermSize=128m -XX:+TieredCompilation -XX:TieredStopAtLevel=1"
 # for mactex
-eval `/usr/libexec/path_helper -s`
+#eval `/usr/libexec/path_helper -s`
 
 # for docker-machine
 #eval $(docker-machine env default)
@@ -81,7 +81,7 @@ export DGO=$GOPATH/src/github.com/deciphernow/
 
 #NVM
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+#. "/usr/local/opt/nvm/nvm.sh"
 
 #source $HOME/.nix-profile/etc/profile.d/nix.sh
 
@@ -118,7 +118,7 @@ export TESSDATA_PREFIX="$HOME/heap/tessdata"
 
 # Anaconda
 export PATH=/usr/local/anaconda3/bin:"$PATH"
-source /usr/local/anaconda3/etc/profile.d/conda.sh
+#source /usr/local/anaconda3/etc/profile.d/conda.sh
 
 # Minishift
 #eval $(minishift oc-env)
@@ -133,3 +133,4 @@ RPROMPT="%D{%Y-%m-%d %H:%M:%S}"
 
 . /opt/anaconda3/etc/profile.d/conda.sh
 conda activate
+
