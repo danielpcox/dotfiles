@@ -117,7 +117,7 @@ export PATH="$CUDA_HOME/bin:$PATH"
 export TESSDATA_PREFIX="$HOME/heap/tessdata"
 
 # Anaconda
-export PATH=/usr/local/anaconda3/bin:"$PATH"
+export PATH=/opt/anaconda3/bin:/usr/local/anaconda3/bin:"$PATH"
 #source /usr/local/anaconda3/etc/profile.d/conda.sh
 
 # Minishift
@@ -132,5 +132,5 @@ RPROMPT="%D{%Y-%m-%d %H:%M:%S}"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 . /opt/anaconda3/etc/profile.d/conda.sh
-conda activate
+#conda activate
 
