@@ -17,7 +17,6 @@ Plug 'Quramy/vim-js-pretty-template'
 Plug 'alvan/vim-closetag'
 Plug 'neoclide/vim-jsx-improve'
 Plug 'pangloss/vim-javascript'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Git
 Plug 'tpope/vim-fugitive'
