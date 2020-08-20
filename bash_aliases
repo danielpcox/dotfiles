@@ -79,8 +79,12 @@ alias bc="bc -lq"
 
 # grey matter
 alias kc='kubectl'
+alias skc='sudo kubectl'
 alias mk='minikube'
 alias gm='greymatter'
+
+#fluent bit
+alias fluent-bit=/opt/td-agent-bit/bin/td-agent-bit
 
 # search manpage for an option, like manopt grep -p
 function manopt() { man $1 | less -p "^ +$2"; }

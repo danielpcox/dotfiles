@@ -138,7 +138,7 @@ RPROMPT="%D{%Y-%m-%d %H:%M:%S}"
 export GMENV_REPO=dev
 
 # pyenv
-export PATH="/Users/danielpcox/.pyenv/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
