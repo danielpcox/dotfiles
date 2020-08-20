@@ -48,7 +48,8 @@ DISABLE_AUTO_TITLE="true"
 plugins=(git pipenv)
 
 # User configuration
-export PATH="/usr/local/anaconda3/bin:$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:/usr/local/bin:~/.local/bin"
+#export PATH="/usr/local/anaconda3/bin:$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:/usr/local/bin:~/.local/bin"
+export PATH="$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:/usr/local/bin:~/.local/bin"
 export MAVEN_OPTS="-Djavax.net.ssl.trustStore=/Library/Java/cacerts -Djavax.net.ssl.trustStorePassword=changeit -Xmx512m -XX:MaxPermSize=128m -XX:+TieredCompilation -XX:TieredStopAtLevel=1"
 # for mactex
 #eval `/usr/libexec/path_helper -s`
@@ -117,7 +118,7 @@ export PATH="$CUDA_HOME/bin:$PATH"
 export TESSDATA_PREFIX="$HOME/heap/tessdata"
 
 # Anaconda
-export PATH=/opt/anaconda3/bin:/usr/local/anaconda3/bin:"$PATH"
+#export PATH=/opt/anaconda3/bin:/usr/local/anaconda3/bin:"$PATH"
 #source /usr/local/anaconda3/etc/profile.d/conda.sh
 
 # Minishift
@@ -131,7 +132,16 @@ RPROMPT="%D{%Y-%m-%d %H:%M:%S}"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-. /opt/anaconda3/etc/profile.d/conda.sh
+# . /opt/anaconda3/etc/profile.d/conda.sh
+
+# Grey Matter
+export GMENV_REPO=dev
+
+# pyenv
+export PATH="/Users/danielpcox/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # hack to activate the pipenv plugin when opening a new terminal window
 cd $(pwd)
+

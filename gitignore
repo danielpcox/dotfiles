@@ -25,3 +25,7 @@ __pycache__
 .swp
 /vendor/**/.git
 attendance.db
+credentials.yaml
+credentials.yml
+secrets.yaml
+secrets.yml
