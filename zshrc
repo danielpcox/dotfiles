@@ -49,7 +49,7 @@ plugins=(git pipenv)
 
 # User configuration
 #export PATH="/usr/local/anaconda3/bin:$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:/usr/local/bin:~/.local/bin"
-export PATH="$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:/usr/local/bin:~/.local/bin"
+export PATH="$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:/usr/local/bin:$HOME/.local/bin"
 export MAVEN_OPTS="-Djavax.net.ssl.trustStore=/Library/Java/cacerts -Djavax.net.ssl.trustStorePassword=changeit -Xmx512m -XX:MaxPermSize=128m -XX:+TieredCompilation -XX:TieredStopAtLevel=1"
 # for mactex
 #eval `/usr/libexec/path_helper -s`

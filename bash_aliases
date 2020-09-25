@@ -82,6 +82,7 @@ alias kc='kubectl'
 alias skc='sudo kubectl'
 alias mk='minikube'
 alias gm='greymatter'
+alias awsume='. awsume'
 
 #fluent bit
 alias fluent-bit=/opt/td-agent-bit/bin/td-agent-bit
