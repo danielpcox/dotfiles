@@ -77,15 +77,32 @@ ap='ansible-playbook'
 # bc with math libraries and quiet loading
 alias bc="bc -lq"
 
-# grey matter
+# Kubernetes / Grey Matter
 alias kc='kubectl'
 alias skc='sudo kubectl'
 alias mk='minikube'
 alias gm='greymatter'
 alias awsume='. awsume'
+alias k3d='sudo -E k3d'
+alias watch='watch '
 
 #fluent bit
 alias fluent-bit=/opt/td-agent-bit/bin/td-agent-bit
 
 # search manpage for an option, like manopt grep -p
 function manopt() { man $1 | less -p "^ +$2"; }
+
+# jupyter
+function EPHEMERAL_PORT() {
+    LOW_BOUND=49152
+    RANGE=16384
+    while true; do
+        CANDIDATE=$[$LOW_BOUND + ($RANDOM % $RANGE)]
+        (echo "" >/dev/tcp/127.0.0.1/${CANDIDATE}) >/dev/null 2>&1
+        if [ $? -ne 0 ]; then
+            echo $CANDIDATE
+            break
+        fi
+    done
+}
+alias jn='jupyter notebook --ip 0.0.0.0 --port $(EPHEMERAL_PORT)'
